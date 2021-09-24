@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>Pokemon</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            .box{
+                background: rgb(255,255,255,.6);
+                padding: 10px;
+                border-radius: 0px 0px 20px 20px;
+                margin-bottom: 50px;
+            }
+            .txt{
+                text-align: center;
+                font-family: gabriola;
+                font-weight: bold;
+            }
+        </style>
+      </head>
+      
+<body>
+
+<form action="http://127.0.0.1:5000/prediction" method="post">
+<body style="background:linear-gradient(to left,royalblue, skyblue, royalblue);">
+<div class="col-lg-12 box">
+
+    <h1 class="txt">POKEMON</h1>
+
+
+<div class="col-lg-2 form-group col-lg-offset-1">
+    <label>Total :</label> 
+    <input type="number" name="Total" class="form-control"> 
+</div>
+<div class="col-lg-2 form-group">
+    <label>HP :</label> 
+    <input type="number" name="HP" class="form-control"> 
+</div>
+<div class="col-lg-2 form-group">
+    <label>Attack:</label> 
+    <input type="number" name="Attack" class="form-control"> 
+</div>
+<div class="col-lg-2 form-group">
+    <label>Defense:</label> 
+    <input type="number" name="Defense" class="form-control"> 
+</div>
+
+<div class="col-lg-2 form-group">
+    <label>SpecialAttack:</label> 
+    <input type="number" name="SpecialAttack" class="form-control"> 
+</div>
+
+<div class="col-lg-2 form-group col-lg-offset-1">
+<label>SpecialDefense:</label> 
+<input type="number" name="SpecialDefense" class="form-control"> 
+</div>
+
+<div class="col-lg-2 form-group">
+    <label>Speed:</label> 
+    <input type="number" name="Speed" class="form-control"> 
+</div>
+
+<div class="col-lg-2 form-group">
+    <label>Generation:</label> 
+    <input type="number" name="Generation" class="form-control"> 
+</div>
+
+<div class="col-lg-2 form-group">
+    <label>Type 1</label>
+    <select class="form-control" name="Type 1">
+        <option>Grass</option> 
+        <option>Fire</option> 
+        <option>Water</option> 
+        <option>Bug</option> 
+        <option>Normal</option> 
+        <option>Poison</option> 
+        <option>Electric</option> 
+        <option>Ground</option> 
+        <option>Fairy</option> 
+        <option>Fighting</option> 
+        <option>Psychic</option> 
+        <option>Rock</option> 
+        <option>Ghost</option> 
+        <option>Ice</option> 
+        <option>Dragon</option> 
+        <option>Dark</option> 
+        <option>Steel</option> 
+        <option>Flying</option> 
+    </select>
+</div>
+
+<div class="col-lg-2 form-group">
+    <label>Type 2</label>
+    <select class="form-control" name='Type 2'>
+        <option>Poison</option> 
+        <option>nan</option>
+        <option>Flying</option> 
+        <option>Dragon</option> 
+        <option>Ground</option> 
+        <option>Fairy</option> 
+        <option>Grass</option> 
+        <option>Fighting</option> 
+        <option>Psychic</option> 
+        <option>Steel</option> 
+        <option>Ice</option> 
+        <option>Rock</option> 
+        <option>Dark</option> 
+        <option>Water</option> 
+        <option>Electric</option> 
+        <option>Fire</option> 
+        <option>Ghost</option> 
+        <option>Bug</option> 
+        <option>Normal</option>  
+    </select>
+</div>
+
+<div class="col-lg-12 form-group text-center">
+    <input class="btn btn-warning" type ="Submit">
+</div>
+</form>
+<div class="col-lg-12 form-group text-center">
+<h4> {{Output}}</h4>
+</div>
+</div>
+<div class="container">
+
+<div class="col-lg-3">
+<img src="static\PngItem_575261.png" alt="Smiley face" class="img-responsive"> 
+</div>
+<div class="col-lg-3">
+<img src="static\charmander.png" alt="Smiley face" class="img-responsive">
+</div>
+<div class="col-lg-3">
+<img src="static\PngItem_313566.png" alt="Smiley face" class="img-responsive">
+</div>
+<div class="col-lg-3">
+<img src="static\PngItem_4932014.png" alt="Smiley face" class="img-responsive">
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+
